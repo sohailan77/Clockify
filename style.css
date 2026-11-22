@@ -65,15 +65,29 @@ body {
   color: #000000;
 }
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 main section {
   display: none;
 }
 
 main .visible {
   display: block;
+  animation: fadeUp 0.35s ease;
 }
 
 main {
   margin-top: 4rem;
   text-align: center;
 }
+
+

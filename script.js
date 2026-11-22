@@ -1,7 +1,6 @@
-const tabs = document.querySelectorAll(".nav-tabs .tab")
+const tabs = document.querySelectorAll(".nav-tabs .tab");
 const shadow = document.querySelector(".nav-tabs .shadow");
 const sections = document.querySelectorAll("main section");
-
 
 tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => {
@@ -11,8 +10,9 @@ tabs.forEach((tab, index) => {
     tab.classList.add("active");
 
     sections.forEach((section) => section.classList.remove("visible"));
-    if (sections[index]) {
-      sections[index].classList.add("visible");
-    }
+
+    sections[index].classList.add("visible");
   });
 });
+
+console.log(tabs);
