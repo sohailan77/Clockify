@@ -16,6 +16,7 @@ body {
 .main-container {
   background-color: #f0f5f8;
   border-radius: 40px;
+  height: 42rem;
   padding: 2rem 1.2rem;
 }
 
@@ -78,6 +79,7 @@ body {
 
 main section {
   display: none;
+  width: 24rem;
 }
 
 main .visible {
@@ -89,5 +91,3 @@ main {
   margin-top: 4rem;
   text-align: center;
 }
-
-
