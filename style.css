@@ -7,17 +7,21 @@
 
 body {
   background-color: #e5e5e5;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .main-container {
+  display: flex;
+  flex-direction: column;
   background-color: #f0f5f8;
-  border-radius: 40px;
-  height: 42rem;
-  padding: 2rem 1.2rem;
+  border-radius: 3vw;
+  width: 100%;
+  max-width: 27rem;
+  height: 44rem;
+  padding: 1.5rem 1.2rem;
 }
 
 .nav-tabs {
@@ -29,8 +33,9 @@ body {
   box-shadow:
     -10px -10px 20px 0 rgba(255, 255, 255, 0.65),
     10px 10px 20px 0 rgba(164, 164, 164, 0.25);
-  height: 4rem;
-  width: 24rem;
+  width: 100%;
+  max-width: 24rem;
+  height: min(4rem, 12vw);
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -40,11 +45,11 @@ body {
   justify-content: center;
   align-items: center;
   color: #858585;
-  font-size: 1rem;
+  font-size: min(1rem, 3.2vw);
+  height: min(3.5rem, 10.5vw);
   z-index: 9;
   cursor: pointer;
   background: transparent;
-  height: 3.5rem;
   transition: color 0.3s ease 0.2s;
 }
 
@@ -53,7 +58,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 3.5rem;
+  height: min(3.5rem, 10.5vw);
   width: calc(100% / 3);
   z-index: 1;
   box-shadow:
@@ -77,9 +82,18 @@ body {
   }
 }
 
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 main section {
   display: none;
-  width: 24rem;
+  width: 100%;
+  max-width: 24rem;
+  margin: 0 auto;
 }
 
 main .visible {
@@ -87,7 +101,23 @@ main .visible {
   animation: fadeUp 0.35s ease;
 }
 
-main {
-  margin-top: 4rem;
-  text-align: center;
+/* Analog Clock section  */
+
+.clock-container {
+  background-color: red;
+  width: min(18rem, 45vw);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+  .main-container {
+    height: 100vh;
+  }
+
+  .clock-container {
+    width: 100%;
+  }
 }
