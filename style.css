@@ -133,7 +133,6 @@ main .visible {
   font-weight: normal;
 }
 
-
 #hour,
 #minute,
 #second {
@@ -144,25 +143,33 @@ main .visible {
 
 #hour {
   width: 5px;
- height: 84px;
+  height: 84px;
   background-color: #000000;
   top: 25.5%;
-  /* display: none; */
 }
 #minute {
   width: 3px;
   height: 107px;
   background-color: #000000;
- top: 18.6%;
+  top: 18.6%;
   right: 190.5px;
-  /* display: none; */
 }
 #second {
   width: 2.2px;
   height: 122px;
   background-color: #fc3e55;
   top: 14.3%;
-  /* display: none; */
+}
+
+.date-display {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.date-display .date {
+  color: #000000;
+  font-size: min(1.5rem, 5.2vw);
+  word-spacing: 5px;
 }
 
 @media (max-width: 500px) {
