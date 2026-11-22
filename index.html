@@ -25,18 +25,42 @@
                 <div class="shadow"></div>
                 <div class="tab clock active">World clock</div>
                 <div class="tab alarm">Alarm</div>
-                <div class="tab sttopwatch">Stopwatch</div>
+                <div class="tab stopwatch">Stopwatch</div>
             </nav>
         </header>
         <main>
+            <!-- Analog Clock section  -->
             <section class="clock-section visible">
-                <h1>Clock Section </h1>
+                <div class="clock-container">
+                    <div class="analog-clock">
+                        <div id="hour"></div>
+                        <div id="minute"></div>
+                        <div id="second"></div>
+                        <span style="--i:1;"><b>|</b></span>
+                        <span style="--i:2;"><b>|</b></span>
+                        <span style="--i:3; --num: 3;"><b>3</b></span>
+                        <span style="--i:4;"><b>|</b></span>
+                        <span style="--i:5;"><b>|</b></span>
+                        <span style="--i:6; --num: 6;"><b>6</b></span>
+                        <span style="--i:7;"><b>|</b></span>
+                        <span style="--i:8;"><b>|</b></span>
+                        <span style="--i:9; --num: 9;"><b>9</b></span>
+                        <span style="--i:10;"><b>|</b></span>
+                        <span style="--i:11;"><b>|</b></span>
+                        <span style="--i:12; --num: 12;"><b>12</b></span>
+                    </div>
+                </div>
+
             </section>
+
+            <!-- Alarm section  -->
             <section class="alarm-section">
                 <h1>Alarm Section</h1>
             </section>
-            <section class="stopwatch-section">
-                <h1>Stopwatch Section</h1>
+
+            <!-- Timer/Stop Watch section  -->
+            <section class="timer-section">
+                <h1>Timer</h1>
             </section>
         </main>
     </div>
