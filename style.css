@@ -179,6 +179,53 @@ main .visible {
   word-spacing: 5px;
 }
 
+/* Alarm clock section  */
+
+/* Set timer section  */
+
+.timer {
+  background-color: #f0f5f8;
+  font-size: min(3rem,10.395vw);
+  color: #000000;
+  box-shadow:
+    -10px -10px 20px 0 #ffffff,
+    10px 10px 20px 0 rgba(0, 0, 0, 0.25);
+  aspect-ratio: 1 / 1;
+  width: 80%;
+  border-radius: 50%;
+  text-align: center;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-buttons {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.timer-buttons div {
+  border-radius: 50%;
+  box-shadow:
+    -10px -10px 20px 0 rgba(255, 255, 255, 0.25),
+    10px 10px 20px 0 rgba(31, 31, 31, 0.25);
+  background-color: #f0f5f8;
+  width: min(4rem, 13.86vw);
+  height: min(4rem, 13.86vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.timer-buttons div i {
+  font-size: min(2rem, 6.93vw);
+  color: #272727;
+}
+
 @media (max-width: 500px) {
   .main-container {
     height: 100vh;
