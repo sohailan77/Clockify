@@ -17,7 +17,7 @@ This project was developed to build a complete, interactive time management web 
   <tr>
     <td align="center" style="border: none;"><img src="analog-clock.png" alt="World clock screenshot" width="290" /></td>
     <td align="center" style="border: none;"><img src="analog-clock.png" alt="Alarm section screenshot" width="290" /></td>
-    <td align="center" style="border: none;"><img src="analog-clock.png" alt="Stopwatch and timer screenshot" width="290" /></td>
+    <td align="center" style="border: none;"><img src="stop-watch.png" alt="Stopwatch and timer screenshot" width="290" /></td>
   </tr>
 </table>
 
